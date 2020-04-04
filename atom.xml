@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mydomain.com</id>
+    <id>https://Ambition-xwj.github.io</id>
     <title>Github pages</title>
-    <updated>2020-04-04T15:41:51.859Z</updated>
+    <updated>2020-04-04T15:57:33.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mydomain.com"/>
-    <link rel="self" href="https://mydomain.com/atom.xml"/>
+    <link rel="alternate" href="https://Ambition-xwj.github.io"/>
+    <link rel="self" href="https://Ambition-xwj.github.io/atom.xml"/>
     <subtitle>徐文杰</subtitle>
-    <logo>https://mydomain.com/images/avatar.png</logo>
-    <icon>https://mydomain.com/favicon.ico</icon>
+    <logo>https://Ambition-xwj.github.io/images/avatar.png</logo>
+    <icon>https://Ambition-xwj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://mydomain.com/post/hello-gridea/</id>
-        <link href="https://mydomain.com/post/hello-gridea/">
+        <id>https://Ambition-xwj.github.io/post/hello-gridea/</id>
+        <link href="https://Ambition-xwj.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
