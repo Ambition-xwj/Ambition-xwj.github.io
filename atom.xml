@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydomain.com</id>
     <title>Github pages</title>
-    <updated>2020-04-04T14:40:55.131Z</updated>
+    <updated>2020-04-04T15:25:21.055Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mydomain.com"/>
     <link rel="self" href="https://mydomain.com/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>徐文杰</subtitle>
     <logo>https://mydomain.com/images/avatar.png</logo>
     <icon>https://mydomain.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
