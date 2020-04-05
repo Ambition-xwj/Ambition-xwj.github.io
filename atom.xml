@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ambition-xwj.github.io</id>
     <title>Github pages</title>
-    <updated>2020-04-04T16:30:58.641Z</updated>
+    <updated>2020-04-05T14:33:18.936Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ambition-xwj.github.io"/>
     <link rel="self" href="https://Ambition-xwj.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://Ambition-xwj.github.io/images/avatar.png</logo>
     <icon>https://Ambition-xwj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
+    <entry>
+        <title type="html"><![CDATA[啦啦啦啦啦啦啦]]></title>
+        <id>https://Ambition-xwj.github.io/post/la-la-la-la-la-la-la/</id>
+        <link href="https://Ambition-xwj.github.io/post/la-la-la-la-la-la-la/">
+        </link>
+        <updated>2020-04-04T16:34:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+<!-- more -->
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://Ambition-xwj.github.io/post/hello-gridea/</id>
