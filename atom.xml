@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ambition-xwj.github.io</id>
     <title>Github pages</title>
-    <updated>2020-04-05T14:33:18.936Z</updated>
+    <updated>2020-04-06T15:51:38.554Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ambition-xwj.github.io"/>
     <link rel="self" href="https://Ambition-xwj.github.io/atom.xml"/>
@@ -11,50 +11,61 @@
     <icon>https://Ambition-xwj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
     <entry>
-        <title type="html"><![CDATA[啦啦啦啦啦啦啦]]></title>
-        <id>https://Ambition-xwj.github.io/post/la-la-la-la-la-la-la/</id>
-        <link href="https://Ambition-xwj.github.io/post/la-la-la-la-la-la-la/">
+        <title type="html"><![CDATA[分布式信息队列（MQ）]]></title>
+        <id>https://Ambition-xwj.github.io/post/fen-bu-shi-xin-xi-dui-lie-mq/</id>
+        <link href="https://Ambition-xwj.github.io/post/fen-bu-shi-xin-xi-dui-lie-mq/">
         </link>
-        <updated>2020-04-04T16:34:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
-<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+        <updated>2020-04-06T06:53:23.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="分布式信息队列mq与技术选型">分布式信息队列（MQ）与技术选型</h2>
+<p>分布式信息队列（MQ）应用场景:</p>
+<p>1，服务解耦 <!--1，系统方面:如何解耦；2，业务层面：服务如何拆分与隔离；3，拆分与隔离如何通信；4，微服务是强依赖还是弱依赖-->可参考：</p>
+<p>[http://zhuanlan.zhihu.com/p/31391535]:</p>
+<p>2，削峰填谷   <!--主要针对于技术性高 流量性大的技术场景实现对应用服务的抗压--></p>
+<p>注：实现对流量的高峰和低估做一个均衡。削峰：下由服务器处理不过来，把信息缓存到一个地方进行慢速消费；填谷：把开始的信息囤积到MQ中慢慢地消费。</p>
+<p>3，异步化缓冲  <!--业务逻辑允许异步化的操作-->只需要做到一致性</p>
+<p>🖌🖌🖌思考：</p>
+<p>1，生产端可靠性投递</p>
+<p>例如：金融不能把信息丢失？如何把信息发射出去与数据库保证原子性？</p>
+<p>2，消费端幂等</p>
+<p>对于重复的消息，消费端消费了两次或者多次导致数据不一致？</p>
+<p>需要消息幂等不可消费多次进行信息幂等验证</p>
+<p>3，高可用</p>
+<p>若其中一个MQ挂机 磁盘不可用，怎样保证高可用？</p>
+<p>4，底延迟  可靠性</p>
+<p>对于流量大的冲压，如何保证信息的底延迟以及可靠性？</p>
+<p>可靠性主流的kafua有分片以及副本的概念</p>
+<p>5，堆积能力</p>
+<p>对于信息堆积能力，如何预估信息在峰值期堆积的能力？在对于MQ技术选型的时候要衡量这种MQ能不能抗住峰值下的冲击，若抗不住就存在问题，怎么办？</p>
+<p>6，扩展性</p>
+<p>对于信息队列如何做到信息的延展性？</p>
+<p>7,等等</p>
+<p>的分布式信息队列(MQ)</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
-<p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+        <content type="html"><![CDATA[<h2 id="分布式信息队列mq与技术选型">分布式信息队列（MQ）与技术选型</h2>
+<p>分布式信息队列（MQ）应用场景:</p>
+<p>1，服务解耦 <!--1，系统方面:如何解耦；2，业务层面：服务如何拆分与隔离；3，拆分与隔离如何通信；4，微服务是强依赖还是弱依赖-->可参考：</p>
+<p>[http://zhuanlan.zhihu.com/p/31391535]:</p>
+<p>2，削峰填谷   <!--主要针对于技术性高 流量性大的技术场景实现对应用服务的抗压--></p>
+<p>注：实现对流量的高峰和低估做一个均衡。削峰：下由服务器处理不过来，把信息缓存到一个地方进行慢速消费；填谷：把开始的信息囤积到MQ中慢慢地消费。</p>
+<p>3，异步化缓冲  <!--业务逻辑允许异步化的操作-->只需要做到一致性</p>
+<p>🖌🖌🖌思考：</p>
+<p>1，生产端可靠性投递</p>
+<p>例如：金融不能把信息丢失？如何把信息发射出去与数据库保证原子性？</p>
+<p>2，消费端幂等</p>
+<p>对于重复的消息，消费端消费了两次或者多次导致数据不一致？</p>
+<p>需要消息幂等不可消费多次进行信息幂等验证</p>
+<p>3，高可用</p>
+<p>若其中一个MQ挂机 磁盘不可用，怎样保证高可用？</p>
+<p>4，底延迟  可靠性</p>
+<p>对于流量大的冲压，如何保证信息的底延迟以及可靠性？</p>
+<p>可靠性主流的kafua有分片以及副本的概念</p>
+<p>5，堆积能力</p>
+<p>对于信息堆积能力，如何预估信息在峰值期堆积的能力？在对于MQ技术选型的时候要衡量这种MQ能不能抗住峰值下的冲击，若抗不住就存在问题，怎么办？</p>
+<p>6，扩展性</p>
+<p>对于信息队列如何做到信息的延展性？</p>
+<p>7,等等</p>
+<p>的分布式信息队列(MQ)</p>
 <!-- more -->
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Ambition-xwj.github.io/post/hello-gridea/</id>
-        <link href="https://Ambition-xwj.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
