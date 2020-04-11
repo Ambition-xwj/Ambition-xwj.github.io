@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ambition-xwj.github.io</id>
     <title>Github pages</title>
-    <updated>2020-04-06T15:53:38.036Z</updated>
+    <updated>2020-04-11T09:51:52.280Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ambition-xwj.github.io"/>
     <link rel="self" href="https://Ambition-xwj.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://Ambition-xwj.github.io/images/avatar.png</logo>
     <icon>https://Ambition-xwj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
+    <entry>
+        <title type="html"><![CDATA[Java并发编程之进程]]></title>
+        <id>https://Ambition-xwj.github.io/post/java-bing-fa-bian-cheng-zhi-jin-cheng/</id>
+        <link href="https://Ambition-xwj.github.io/post/java-bing-fa-bian-cheng-zhi-jin-cheng/">
+        </link>
+        <updated>2020-04-11T08:43:36.000Z</updated>
+        <content type="html"><![CDATA[<p>Java并发编程（关于多线程概念的建立）</p>
+<figure data-type="image" tabindex="1"><img src="https://Ambition-xwj.github.io/post-images/1586594887612.jpg" alt="" loading="lazy"></figure>
+<p>1，什么是线程？</p>
+<p>操作系统 ，进程，线程的包含关系</p>
+<figure data-type="image" tabindex="2"><img src="https://Ambition-xwj.github.io/post-images/1586595646755.jpg" alt="" loading="lazy"></figure>
+<p>注：thread表示的是线程。</p>
+<p>即，1，概念：操作系统是包含多个进程的容器，而每个进程又都是容纳多个线程的容器<br>
+2，Oracle文档的官方法定义：<br>
+<img src="https://Ambition-xwj.github.io/post-images/1586596192650.jpg" alt="" loading="lazy"><br>
+3，理解什么是进程 ？<br>
+自己的理解：🙃当在电脑上下载一个和平精英的时候，如果不玩就不运行，只是一堆代码放置在那；如果玩和平精英，这个游戏就开始运行，会消耗文档，CPU，磁盘等，其都是以进程为单位的。<br>
+<img src="https://Ambition-xwj.github.io/post-images/1586598179092.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[分布式信息队列（MQ）]]></title>
         <id>https://Ambition-xwj.github.io/post/fen-bu-shi-xin-xi-dui-lie-mq/</id>
