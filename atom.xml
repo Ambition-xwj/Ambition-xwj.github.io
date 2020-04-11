@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Ambition-xwj.github.io</id>
     <title>Github pages</title>
-    <updated>2020-04-11T09:51:52.280Z</updated>
+    <updated>2020-04-11T11:06:19.749Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Ambition-xwj.github.io"/>
     <link rel="self" href="https://Ambition-xwj.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://Ambition-xwj.github.io/images/avatar.png</logo>
     <icon>https://Ambition-xwj.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Github pages</rights>
+    <entry>
+        <title type="html"><![CDATA[Java并发编程之线程]]></title>
+        <id>https://Ambition-xwj.github.io/post/java-bing-fa-bian-cheng-zhi-xian-cheng/</id>
+        <link href="https://Ambition-xwj.github.io/post/java-bing-fa-bian-cheng-zhi-xian-cheng/">
+        </link>
+        <updated>2020-04-11T10:58:07.000Z</updated>
+        <content type="html"><![CDATA[<p>1，什么是线程？</p>
+<p>用java编译器新建一 new package（background）一 类为Create100Threads 一 （目的：创建100个线程，用活动监视器的cpu栏目看Java线程数量的变化，10秒后线程消失）一 打开监测器</p>
+<p>用java编译器编译</p>
+<figure data-type="image" tabindex="1"><img src="https://Ambition-xwj.github.io/post-images/1586602911212.jpg" alt="" loading="lazy"></figure>
+<p>打开编译器，首先我们可以看到进行线程的数量</p>
+<figure data-type="image" tabindex="2"><img src="https://Ambition-xwj.github.io/post-images/1586602965814.jpg" alt="" loading="lazy"></figure>
+<p>我们用代码启动编译器后，可以看看线程的数量</p>
+<figure data-type="image" tabindex="3"><img src="https://Ambition-xwj.github.io/post-images/1586603053177.jpg" alt="" loading="lazy"></figure>
+<p>我们可以打开系统管理器看看（左侧是进程，右侧是线程）</p>
+<figure data-type="image" tabindex="4"><img src="https://Ambition-xwj.github.io/post-images/1586603094151.jpg" alt="" loading="lazy"></figure>
+<p>进程和线程的不同：</p>
+<p>1，起源不同（先有进程后有线程，后来由于处理器的速度往往比外设要快，外设就是键盘以及硬盘啊，处理器的速度远远要大于它们，为了提高cpu的利用率才诞生了线程，目的是提高程序的执行效率）2，概念不同（进程，是具有独立功能程序运行起来的一个活动，也是系统调动独立的单位，而线程是cpu调动的基本单位）3，内存共享方式不同（对于进程，不同的进程之间都会被操作系统分配一定的内存，但是不同进程之间的内存通常是不共享的，例如浏览器无法访问正在播放的QQ音乐，是没有办法直接访问内存，若要共享需要使用高级技巧为进程间通信ipc，but线程与线程之间是可以共享的，它们本身都服务于同一个进程，可以直接访问一定量的共享内存，不需要任何额外的处理）4，拥有的资源不同（线程是进程的一部分，则线程拥有的资源是比较少的，但有自己独有的一部分）5，数量不同（进程一个可以有千万个线程，但一个进程至少需要一个线程）6，开销不同</p>
+<img src="C:\Users\徐文杰\Documents\sample\images\avatar\QQ图片20200411184912.jpg" style="zoom:50%;" />
+<img src="C:\Users\徐文杰\Documents\sample\images\avatar\QQ图片20200411184943.jpg" style="zoom:50%;" />
+<p>相似点：生命周期。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java并发编程之进程]]></title>
         <id>https://Ambition-xwj.github.io/post/java-bing-fa-bian-cheng-zhi-jin-cheng/</id>
